@@ -1,0 +1,16 @@
+# Exact versions this suite was built and last run against (from a working
+# venv on 2026-08-18), for byte-for-byte reproducibility. `pip install -e .`
+# against pyproject.toml's looser `>=` bounds will also work and is fine for
+# new work - pin to this file only if you need to match past results exactly.
+tiktoken==0.13.0
+transformers==5.14.1
+tokenizers==0.22.2
+huggingface_hub==1.25.1
+sentencepiece==0.2.2
+protobuf==7.35.1
+truststore==0.10.4
+
+# Only needed for the 3 live-API models (Gemini, Claude) - skip if you're
+# only running the 10 local/offline tokenizers.
+google-genai==2.16.0
+anthropic==0.120.2

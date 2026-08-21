@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tokfertility"
+version = "0.1.0"
+description = "FLORES+ tokenizer fertility, parity, and cost-efficiency benchmark (en/hi/te/kn/mr)"
+requires-python = ">=3.10"
+dependencies = [
+    "tiktoken>=0.7",
+    "transformers>=4.42",
+    "tokenizers>=0.19",
+    "huggingface_hub>=0.24",
+    "sentencepiece>=0.2.0",
+    "protobuf>=4.25",
+    "truststore>=0.9",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+tokfertility = ["data/*.json"]

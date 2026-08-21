@@ -1,0 +1,133 @@
+{
+  "version": "2026-08-17",
+  "currency": "USD",
+  "source": "Supersedes pricing_2026-07-30.json. Only gemini-3.6-flash changed - verified via live web search on 2026-08-17 that pricing_2026-07-30.json had recorded Gemini 3.6 Flash's STANDARD rate (effective 2027-01-01), not its current rate: Google is running an introductory rate of $0.75/$3.75 per 1M tokens through 2026-12-31, exactly half the $1.50/$7.50 standard rate that takes over afterward. All other rows carried forward unchanged from pricing_2026-07-30.json - see that file's per-model notes for their own fetch dates and sources.",
+  "models": [
+    {
+      "model_id": "gpt-4o",
+      "input_usd_per_1m_tokens": 2.50,
+      "output_usd_per_1m_tokens": 10.00,
+      "pricing_available": true,
+      "note": "OpenAI API, standard tier. Confirmed still current via web search 2026-08-17, though grandfathered/legacy for existing integrations - new API integrations default to the GPT-4.1 family at different rates."
+    },
+    {
+      "model_id": "gpt-5",
+      "input_usd_per_1m_tokens": 1.25,
+      "output_usd_per_1m_tokens": 10.00,
+      "pricing_available": true,
+      "note": "OpenAI API, standard tier (gpt-5 / gpt-5.1). Confirmed via web search 2026-08-17: this is the original GPT-5 checkpoint's rate, still listed, but OpenAI's current flagship is GPT-5.5/5.6 at materially different ($5-30, $2-12, or $0.20-1.20) rates - GPT-5 is no longer the primary offering. Not used in any flores_fertility.py run to date."
+    },
+    {
+      "model_id": "llama-3.1-8b",
+      "input_usd_per_1m_tokens": null,
+      "output_usd_per_1m_tokens": null,
+      "pricing_available": false,
+      "note": "Open-weight, self-hosted or third-party inference API. No single official rate - add yours to enable cost math."
+    },
+    {
+      "model_id": "gemma-2-9b",
+      "input_usd_per_1m_tokens": null,
+      "output_usd_per_1m_tokens": null,
+      "pricing_available": false,
+      "note": "Open-weight, self-hosted or third-party inference API. No single official rate - add yours to enable cost math."
+    },
+    {
+      "model_id": "qwen2.5-7b",
+      "input_usd_per_1m_tokens": null,
+      "output_usd_per_1m_tokens": null,
+      "pricing_available": false,
+      "note": "Open-weight, self-hosted or third-party inference API. No single official rate - add yours to enable cost math."
+    },
+    {
+      "model_id": "mistral-nemo-tekken",
+      "input_usd_per_1m_tokens": null,
+      "output_usd_per_1m_tokens": null,
+      "pricing_available": false,
+      "note": "Open-weight, self-hosted or third-party inference API. No single official rate - add yours to enable cost math."
+    },
+    {
+      "model_id": "sarvam-1",
+      "input_usd_per_1m_tokens": null,
+      "output_usd_per_1m_tokens": null,
+      "pricing_available": false,
+      "note": "Open-weight, self-hosted or third-party inference API. No single official rate - add yours to enable cost math."
+    },
+    {
+      "model_id": "sarvam-30b",
+      "input_usd_per_1m_tokens": null,
+      "output_usd_per_1m_tokens": null,
+      "pricing_available": false,
+      "note": "Open-weight, self-hosted or third-party inference API. No single official rate - add yours to enable cost math."
+    },
+    {
+      "model_id": "sarvam-m",
+      "input_usd_per_1m_tokens": null,
+      "output_usd_per_1m_tokens": null,
+      "pricing_available": false,
+      "note": "Open-weight, self-hosted or third-party inference API. No single official rate - add yours to enable cost math."
+    },
+    {
+      "model_id": "sarvam-105b",
+      "input_usd_per_1m_tokens": null,
+      "output_usd_per_1m_tokens": null,
+      "pricing_available": false,
+      "note": "Open-weight, self-hosted or third-party inference API. No single official rate - add yours to enable cost math."
+    },
+    {
+      "model_id": "gemma-3-4b",
+      "input_usd_per_1m_tokens": null,
+      "output_usd_per_1m_tokens": null,
+      "pricing_available": false,
+      "note": "Open-weight, self-hosted or third-party inference API. No single official rate - add yours to enable cost math."
+    },
+    {
+      "model_id": "qwen3-8b",
+      "input_usd_per_1m_tokens": null,
+      "output_usd_per_1m_tokens": null,
+      "pricing_available": false,
+      "note": "Open-weight, self-hosted or third-party inference API. No single official rate - add yours to enable cost math."
+    },
+    {
+      "model_id": "brahmic-131k",
+      "input_usd_per_1m_tokens": null,
+      "output_usd_per_1m_tokens": null,
+      "pricing_available": false,
+      "note": "Tokenizer-only research release, not a hosted model - no API price applies."
+    },
+    {
+      "model_id": "cl100k-base",
+      "input_usd_per_1m_tokens": null,
+      "output_usd_per_1m_tokens": null,
+      "pricing_available": false,
+      "note": "Encoding shared by several priced OpenAI models (gpt-3.5-turbo, gpt-4, gpt-4-turbo) at different rates - add the specific one you're costing."
+    },
+    {
+      "model_id": "gemini-3.6-flash",
+      "input_usd_per_1m_tokens": 0.75,
+      "output_usd_per_1m_tokens": 3.75,
+      "pricing_available": true,
+      "note": "CORRECTED 2026-08-17: pricing_2026-07-30.json recorded $1.50/$7.50, which web search on 2026-08-17 confirms is the STANDARD rate taking effect 2027-01-01, not the current one. Google is running an introductory rate of $0.75/$3.75 through 2026-12-31 - exactly half. Use $1.50/$7.50 again for any analysis dated on or after 2027-01-01."
+    },
+    {
+      "model_id": "gemini-2.5-flash",
+      "input_usd_per_1m_tokens": 0.30,
+      "output_usd_per_1m_tokens": 2.50,
+      "pricing_available": true,
+      "note": "Gemini API, standard tier. Confirmed still current via web search 2026-08-17; Google has scheduled Gemini 2.5 retirement for 2026-10-16. Not used in any flores_fertility.py run to date."
+    },
+    {
+      "model_id": "claude-opus-4-8",
+      "input_usd_per_1m_tokens": 5.00,
+      "output_usd_per_1m_tokens": 25.00,
+      "pricing_available": true,
+      "note": "Anthropic API, standard tier. Confirmed still current via web search AND a live count_tokens call, both on 2026-08-17."
+    },
+    {
+      "model_id": "claude-sonnet-4-5",
+      "input_usd_per_1m_tokens": 3.00,
+      "output_usd_per_1m_tokens": 15.00,
+      "pricing_available": true,
+      "note": "Anthropic API, legacy model (claude-sonnet-4-5-20250929). Confirmed still LIVE and reachable via a direct count_tokens call on 2026-08-17 (not decommissioned), but public pricing pages found via web search the same day no longer list this checkpoint by name - only newer Sonnet 4.6/Sonnet 5 - and Sonnet 4.6 happens to list this same $3.00/$15.00 rate. Could not independently confirm from public sources whether 4.5 is still billed at exactly this rate or has been folded into a successor's pricing tier. Flagged as uncertain, not corrected, since no confirmed replacement value exists - verify directly against your own Anthropic console/invoice before relying on this externally."
+    }
+  ]
+}

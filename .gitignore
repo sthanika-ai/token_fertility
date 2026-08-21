@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Generated at run time - regenerate locally via the commands in README.md
+# rather than committing them. Kept on disk for local convenience; just not
+# tracked in git.
+/cache/
+/cache_live_gemini36/
+/cache_live_opus48/
+/cache_live_sonnet45/
+/flores_results/
+/flores_results_sonnet45/
+/flores_results_opus48/
+/flores_results_gemini36/
+/flores_summary/
+
+# The FLORES+ corpus is CC-BY-SA-4.0 and gated on the Hub - fetch it yourself
+# via flores_build_corpus.py (pinned to FLORES_REVISION, so it reproduces
+# byte-for-byte) rather than have this repo redistribute it. See "Data &
+# Licensing" in README.md.
+/flores_subset/
